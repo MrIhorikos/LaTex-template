@@ -6,7 +6,7 @@
     "latex-workshop.latex.autoClean.run": "onBuilt",
     //削除する補助ファイルを追加
     "latex-workshop.latex.clean.fileTypes": [
-        // "*.aux",
+        "*.aux",
         "*.blg",
         "*.idx",
         "*.ind",
