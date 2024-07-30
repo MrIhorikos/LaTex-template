@@ -1,11 +1,11 @@
-\AtBeginDocument{\RenewCommandCopy\qty\SI}
+%\AtBeginDocument{\RenewCommandCopy\qty\SI}
 \documentclass[uplatex]{jsbook}
-%\documentclass[a4paper]{jarticle}
+
 \input{preamble}
 
 \begin{document}
 \frontmatter
-\input{cover/cover.tex}
+\input{cover/cover.tex}    %*** 表紙のファイル
 
 \newpage
 \thispagestyle{empty}
@@ -13,7 +13,7 @@
 \newpage
 
 \thispagestyle{empty}
-\input{abstract/Abstract_org.tex}  
+\input{abstract/Abstract.tex}    %*** 概要のファイル
 
 \pagestyle{headings}
 \setcounter{tocdepth}{2}
@@ -29,42 +29,27 @@
   \input{Chapter1/large_colider.tex}
   \input{Chapter1/inter_track_detector.tex}
  
-  %*** Chapter 3
+  %*** Chapter 2
   \chapter{LGAD検出器の原理}
   \input{Chapter2/pn.tex}
   \input{Chapter2/avalance.tex}
-  %\input{Chapter2/IV.tex}
-  \input{Chapter2/drift.tex}
-  \input{Chapter3/AC-LGAD.tex}
-  \input{Chapter3/Timeing_reso.tex}
-  \input{Chapter3/MultiplicationNoise.tex}
-  \input{Chapter3/TresovsVoltage.tex}
-
-  %*** Chapter 4
+  %*** Chapter 3
   \chapter{LGAD検出器の増幅率の測定}
-  \input{Chapter4/Sample.tex}
-  %\input{Chapter4/Setup.tex}
-  \input{Chapter4/way_measurement.tex}
-  \input{Chapter4/IV.tex}
-  \input{Chapter4/analysis.tex}
-  \input{Chapter4/result_SignalSize.tex}
+  \input{Chapter3/Sample.tex}
+  \input{Chapter3/way_measurement.tex}
 
- %*** Chapter 5
+ %*** Chapter 4
  \chapter{時間分解能の評価}
- \input{Chapter5/result_RiseTime.tex}
- \input{Chapter5/result_Noise.tex}
- \input{Chapter5/jitter.tex}
- \input{Chapter5/Multiplication_Noise.tex}
+ \input{Chapter4/result_RiseTime.tex}
+ %*** Chapter 5
+ \chapter{結論}
+ \input{Chapter5/Conclusion.tex}
 
  %*** Chapter 6
- \chapter{結論}
- \input{Chapter6/Conclusion.tex}
+ \input{Chapter6/Acknowledgements.tex}
 
- %*** Chapter 7
- \input{Chapter7/Acknowledgements.tex}
-
- \bibliography{bib/biblio_book}
- \bibliographystyle{IEEEtran}
+ \bibliography{bib/biblio_book}   %*** 参考文献のファイル
+ \bibliographystyle{IEEEtran}  %*** 参考文献のフォーマットの設定
  %\bibliographystyle{junsrt}
 
 \end{document}
