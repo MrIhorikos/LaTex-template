@@ -1,0 +1,109 @@
+   "workbench.settings.useSplitJSON":true,
+    // LaTeX 
+    "latex-workshop.intellisense.package.enabled": true,
+    //補助配流を自動的に削除
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    //削除する補助ファイルを追加
+    "latex-workshop.latex.clean.fileTypes": [
+        // "*.aux",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+    
+    //latexmkのビルドレシピ
+    "latex-workshop.latex.recipes": [
+        //bibTexを使用しない場合のレシピ
+        {
+            "name": "ptex2pdf (uplatex)*2",
+            "tools": [
+                "ptex2pdf (uplatex)",
+                "ptex2pdf (uplatex)"
+            ]
+        },
+        //bibTexを使用する場合のレシピ
+        {
+            "name": "ptex2pdf (uplatex) -> bibtex -> ptex2pdf (uplatex) *2",
+            "tools": [
+                "ptex2pdf (uplatex)",
+                "pbibtex",
+                "ptex2pdf (uplatex)",
+                "ptex2pdf (uplatex)"
+            ]
+        }
+    ],
+    
+    //latexmkのビルドツール
+    "latex-workshop.latex.tools": [
+        {
+            "name": "ptex2pdf (uplatex)",
+            "command": "ptex2pdf",
+            "args": [
+                "-interaction=nonstopmode",
+                "-l",
+                "-u",
+                "-ot",
+                "-kanji=utf8 -synctex=1",
+                "%DOC%"
+            ],
+            "env": {
+                "PATH": "/Library/TeX/texbin"
+            }
+        },
+        {
+            "name": "pbibtex",
+            "command": "pbibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    
+    //これより下の設定は人それぞれかも
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.chktex.enabled": false,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "editor.minimap.enabled": false,
+    "grammarly.files.include": [
+        "**/readme.md",
+        "**/README.md",
+        "**/*.txt",
+        "**/*.tex"
+    ],
+    "cmake.configureOnOpen": true,
+    "cmake.showOptionsMovedNotification": false,
+    "C_Cpp.default.browse.path": [],
+    "C_Cpp.default.systemIncludePath": [
+        "${workspaceFolder}/**",
+        "/Users/horikoshiissei/local/root/6.26.10/include",
+        "/Users/horikoshiissei/local/root/6.26.10/include/bits"
+    ],
+    "C_Cpp.default.compilerPath": "",
+    "git.ignoreLegacyWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.includePath": [
+        "/Users/horikoshiissei/local/root/6.26.10/include/**",
+        "${workspacsFolder}/**"
+    ],
+    "editor.accessibilitySupport": "off",
+    "explorer.confirmDelete": false,
+    
