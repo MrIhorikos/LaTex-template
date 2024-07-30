@@ -9,7 +9,7 @@
  
 ・ "コマンドの表示と実行>" をクリック
  
-・ "LaTex workshop:レシピでビルド" をクリック
+・ "LaTex workshop:Build with recipe" をクリック
  
 ・ "ptex2pdf" をクリックするとpdfファイルを作成することができる
  
