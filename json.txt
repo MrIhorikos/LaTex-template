@@ -93,16 +93,13 @@
     "cmake.showOptionsMovedNotification": false,
     "C_Cpp.default.browse.path": [],
     "C_Cpp.default.systemIncludePath": [
-        "${workspaceFolder}/**",
-        "/Users/horikoshiissei/local/root/6.26.10/include",
-        "/Users/horikoshiissei/local/root/6.26.10/include/bits"
+        "${workspaceFolder}/**"
     ],
     "C_Cpp.default.compilerPath": "",
     "git.ignoreLegacyWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "code-runner.runInTerminal": true,
     "C_Cpp.default.includePath": [
-        "/Users/horikoshiissei/local/root/6.26.10/include/**",
         "${workspacsFolder}/**"
     ],
     "editor.accessibilitySupport": "off",
