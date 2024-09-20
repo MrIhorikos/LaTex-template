@@ -1,6 +1,6 @@
 # vscodeでLaTexを使えるようにしよう！！　for Mac
 
-## <vscodeでLaTexのコンパイル方法>
+## vscodeでLaTexのコンパイル方法
 
 ・Texを自分のpcにインストールする。
 
@@ -21,4 +21,6 @@
 ## 困った時について
 
 supportfileのディレクトリ内にお役立ち情報があります。
+
+s2420194@u.tsukuba.ac.jpに困ったことがあれば連絡ください。
  
