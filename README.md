@@ -1,6 +1,6 @@
 # vscodeでLaTexを使えるようにしよう！！　for Mac
 
-# <vscodeでLaTexのコンパイル方法>
+## <vscodeでLaTexのコンパイル方法>
 
 ・Texを自分のpcにインストールする。
 
@@ -18,7 +18,7 @@
  
 ・ "ptex2pdf -> bibtex -> ptex2pdf" をクリックすると参考文献も含めたpdfファイルを作成することができる
 
-# 困った時について
+## 困った時について
 
 supportfileのディレクトリ内にお役立ち情報があります。
  
