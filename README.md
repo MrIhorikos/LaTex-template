@@ -1,4 +1,4 @@
-vscodeでLaTexを使えるようにしよう！！　for MacOS
+##vscodeでLaTexを使えるようにしよう！！　for Mac
 
 <vscodeでLaTexのコンパイル方法>
 
